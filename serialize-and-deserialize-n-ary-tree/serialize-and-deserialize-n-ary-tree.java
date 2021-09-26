@@ -24,7 +24,7 @@ class Codec {
 
     public String serialize(Node root) {
         if(root == null)
-            return null;
+            return "";
         StringBuilder sb = new StringBuilder();
         
         sb.append((char)(root.val + '0'));
