@@ -52,10 +52,7 @@ class Codec {
         while (data.charAt(index) != '#') {
             node.children.add(deserialize(data));
         }
-        
-        // Discard the sentinel. Note that this also moves us
-        // forward in the input string. So, we don't have the index
-        // progressing inside the above while loop!
+
         index++;
         
         return node;
